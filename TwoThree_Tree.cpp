@@ -1,3 +1,9 @@
+// Develop the C++ class TwoThreeTree, which implements a 2-3 tree. You must include function to search, insert and delete.
+// Input command :
+// 1. insert <number> : Insert number to tree.
+// 2. print : Print tree.
+// Note: all numbers are bigger than 0.
+
 #include <iostream>
 #include <string>
 #include <vector>

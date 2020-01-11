@@ -1,15 +1,15 @@
-// Suppose that each node containing a keyvalue (int) and link in a binary search tree also has the field LeftSize as described in the text. Please write a class BinaryTree to implement the following functions:
-//(1)  insertNode() to insert a node into a binary search tree.
-//(2)  deleteNode() to delete a node(delete by value)from the binary search tree.(If there are two child, replace the delete node with the smallest key in the right sub tree.)
-//(3)  searchByValue() to search a node by value, if it exists, show the LeftSize and Depth of the node.
-//(4)  searchByRank() to search a node by rank K(the Kth smallest).
-//(5)  showInorder() to print out the inorder traversal of the nodes’ values.
-//(6)  showPreorder() to print out the preorder traversal of the nodes’ values.
-//(7)  showPostorder() to print out the postorder traversal of the nodes’ values.
-//and interact with the user by the corresponding command: function# keyvalue, where function# is valid from 1 to 7, and keyvalue is the value of nodes in the binary tree.
-//Note : If you insert duplicate data, output : ”Duplicate data.” 
-//       If there’s no such value to delete, output : “No such value to delete.”
-//       If there’s no such value to search, output : “No such value.”
+//  Suppose that each node containing a keyvalue (int) and link in a binary search tree also has the field LeftSize as described in the text. Please write a class BinaryTree to implement the following functions:
+//  (1)  insertNode() to insert a node into a binary search tree.
+//  (2)  deleteNode() to delete a node(delete by value)from the binary search tree.(If there are two child, replace the delete node with the smallest key in the right sub tree.)
+//  (3)  searchByValue() to search a node by value, if it exists, show the LeftSize and Depth of the node.
+//  (4)  searchByRank() to search a node by rank K(the Kth smallest).
+//  (5)  showInorder() to print out the inorder traversal of the nodes’ values.
+//  (6)  showPreorder() to print out the preorder traversal of the nodes’ values.
+//  (7)  showPostorder() to print out the postorder traversal of the nodes’ values.
+//  and interact with the user by the corresponding command: function# keyvalue, where function# is valid from 1 to 7, and keyvalue is the value of nodes in the binary tree.
+//  Note : If you insert duplicate data, output : ”Duplicate data.” 
+//         If there’s no such value to delete, output : “No such value to delete.”
+//         If there’s no such value to search, output : “No such value.”
 
 #include <iostream>
 #include <algorithm>

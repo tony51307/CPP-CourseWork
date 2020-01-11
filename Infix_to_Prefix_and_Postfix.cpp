@@ -6,7 +6,8 @@
 
 #include <iostream>
 using namespace std;
- 
+
+// implement stack
 class Stack{
 public:
     int capacity;
@@ -48,7 +49,8 @@ public:
     }
  
 };
- 
+
+
 int isp(char token){
     if(token=='+'||token=='-'){
         return 2;
@@ -58,7 +60,8 @@ int isp(char token){
         return 1;
     }
 }
- 
+
+// find the incoming priority
 int icp(char token){
     if(token=='+'||token=='-'){
         return 2;
@@ -71,6 +74,7 @@ int icp(char token){
     }
 }
  
+// check if it is an operand
 bool isOperand(char token){
     if(token == '-'||token=='+'||token =='*'||token=='/'||token==')'||token=='('){
         return false;
@@ -79,6 +83,7 @@ bool isOperand(char token){
     }
 }
  
+// convert to postfix
 void Postfix(string e){
     Stack stack;
     stack.setStack((int)e.length());
@@ -108,6 +113,7 @@ void Postfix(string e){
     cout<<"\n";
 }
  
+// convert to postfix
 void Prefix(string e){
     char p[(int)e.length()];
     for(int i =0; i<(int)e.length();i++){
